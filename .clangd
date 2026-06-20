@@ -1,0 +1,12 @@
+CompileFlags:
+  Add:
+    - -xc
+    - -std=c99
+    - -Iutil
+    - -Wno-unknown-attributes
+    - -Wno-gcc-compat
+Diagnostics:
+  ClangTidy:
+    Remove:
+      - bugprone-infinite-loop
+      - misc-use-internal-linkage
